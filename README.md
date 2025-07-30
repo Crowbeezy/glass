@@ -51,6 +51,18 @@ node --version
 npm run setup
 ```
 
+### Start the App
+
+`npm start` expects a prebuilt frontend in `pickleglass_web/out`. Running
+`npm run setup` handles this automatically. If you've already installed
+dependencies, you can manually build the frontend before starting:
+
+```bash
+cd pickleglass_web && npm run build
+cd .. && npm start
+```
+
+
 ## Highlights
 
 
