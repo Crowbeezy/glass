@@ -49,6 +49,14 @@ const PROVIDERS = {
           { id: 'gemini-live-2.5-flash-preview', name: 'Gemini Live 2.5 Flash' }
       ],
   },
+  'openrouter': {
+      name: 'OpenRouter',
+      handler: () => require("./providers/openrouter"),
+      llmModels: [
+          { id: 'openrouter/auto', name: 'OpenRouter Auto' },
+      ],
+      sttModels: [],
+  },
   'anthropic': {
       name: 'Anthropic',
       handler: () => require("./providers/anthropic"),
@@ -154,6 +162,7 @@ function getProviderClass(providerId) {
     // Map provider IDs to their actual exported class names
     const classNameMap = {
         'openai': 'OpenAIProvider',
+        'openrouter': 'OpenRouterProvider',
         'anthropic': 'AnthropicProvider',
         'gemini': 'GeminiProvider',
         'deepgram': 'DeepgramProvider',

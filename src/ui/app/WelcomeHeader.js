@@ -209,7 +209,7 @@ export class WelcomeHeader extends LitElement {
                     <div class="option-content">
                         <div class="option-title">Use Personal API keys</div>
                         <div class="option-description">
-                            Costs may apply based on your API usage<br/>No personal data collected<br/>Use your own API keys (OpenAI, Gemini, etc.)
+                            Costs may apply based on your API usage<br/>No personal data collected<br/>Use your own API keys (OpenAI, Gemini, OpenRouter, etc.)
                         </div>
                     </div>
                     <button class="action-button" @click=${this.apiKeyCallback}>
